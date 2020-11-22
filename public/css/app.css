@@ -17047,9 +17047,12 @@ readers do not read off random characters that represent icons */
   width: auto;
 }
 
-/*.navbar {
-    position: fixed;
-}*/
+.navbar-toggler {
+  border: none !important;
+  -webkit-appearance: none !important;
+     -moz-appearance: none !important;
+          appearance: none !important;
+}
 
 .masthead {
   height: 100vh;
@@ -17057,6 +17060,14 @@ readers do not read off random characters that represent icons */
   background-image: url(/images/hero.jpg);
   background-size: cover;
   background-position: left;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+.minihead {
+  background-image: url(/images/miniheader.jpg);
+  background-position: center;
+  background-size: cover;
   background-repeat: no-repeat;
 }
 

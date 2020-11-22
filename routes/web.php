@@ -1,6 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\TeamController;
 
 /*
 |--------------------------------------------------------------------------
@@ -14,22 +15,20 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    return view('index');
 })
 -> name('home');
 
-Route::get('/team', function () {
-    return view('team');
-})
+Route::get('/team', [TeamController::class, 'showTeam'])
 -> name('team');
 
-Route::get('/services', function () {
-    return view('services');
+Route::get('/servizi', function () {
+    return view('servizi');
 })
 -> name('servizi');
 
-Route::get('/contact', function () {
-    return view('contact');
+Route::get('/contatti', function () {
+    return view('contatti');
 })
 -> name('contatti');
 

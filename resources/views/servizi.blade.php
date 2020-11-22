@@ -2,4 +2,6 @@
 
     <x-navbar />
 
+    <x-miniheader />
+
 </x-layout>

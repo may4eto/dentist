@@ -1,10 +1,10 @@
 <nav class="navbar navbar-expand-lg fixed-top">
-  <div class="container">
+  <div class="container-fluid">
     <a class="navbar-brand" href="{{route('home')}}">
         <img src="/images/logo.svg" alt="logo" width= "48px">
     </a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
+      <span class="navbar-toggler-icon"><i class="fas fa-bars text-primary"></i></span>
     </button>
     <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
       <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
