@@ -51,9 +51,9 @@
                               <tr>
                                 <th scope="row">Dr.ssa Grimaldi</th>
                                 <td>09:00-13:00h</td>
+                                <td>15:00-18:00h</td>
                                 <td>09:00-13:00h</td>
-                                <td>09:00-13:00h</td>
-                                <td>09:00-13:00h</td>
+                                <td>15:00-18:00h</td>
                                 <td>09:00-13:00h</td>
                               </tr> 
                             </tbody>
