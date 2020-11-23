@@ -10,7 +10,7 @@
     title="{{$member['title']}}"
     services="{{$member['services']}}"
     description="{{$member['description']}}"
-        />
+    />
     @endforeach
 
 </x-layout>

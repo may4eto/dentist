@@ -1,4 +1,4 @@
-<div class="col-xl-3 col-md-6 mb-4">
+<div class="col-6 col-md-3 mb-4">
     <div class="card border-0 shadow">
       <img src="{{$image}}" class="card-img-top" alt="team member">
       <div class="card-body text-center">

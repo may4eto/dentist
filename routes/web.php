@@ -2,6 +2,8 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\TeamController;
+use App\Http\Controllers\ServicesController;
+
 
 /*
 |--------------------------------------------------------------------------
@@ -22,9 +24,7 @@ Route::get('/', function () {
 Route::get('/team', [TeamController::class, 'showTeam'])
 -> name('team');
 
-Route::get('/servizi', function () {
-    return view('servizi');
-})
+Route::get('/servizi', [ServicesController::class, 'showServices'])
 -> name('servizi');
 
 Route::get('/contatti', function () {
