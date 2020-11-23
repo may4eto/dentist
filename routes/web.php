@@ -2,7 +2,9 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\TeamController;
+use App\Http\Controllers\FrontController;
 use App\Http\Controllers\ServicesController;
+
 
 
 /*
@@ -16,10 +18,9 @@ use App\Http\Controllers\ServicesController;
 |
 */
 
-Route::get('/', function () {
-    return view('index');
-})
+Route::get('/index', [FrontController::class, 'showIndex'])
 -> name('home');
+
 
 Route::get('/team', [TeamController::class, 'showTeam'])
 -> name('team');

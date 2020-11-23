@@ -17059,7 +17059,7 @@ readers do not read off random characters that represent icons */
   min-height: 500px;
   background-image: url(/images/hero.jpg);
   background-size: cover;
-  background-position: left;
+  background-position: left top;
   background-repeat: no-repeat;
   background-attachment: fixed;
 }

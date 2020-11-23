@@ -6,21 +6,29 @@
                 <div class="col-12 col-md-6 text-center text-md-left">
                 <h1 class="font-weight-light">Studio Dentistico <br> Dott. Simone Sapienza</h1>
                 <h2 class="">Cura il tuo sorriso!</h2>
-                <a class="btn btn-rounded btn-primary my-5 text-uppercase">Prenota visita</a>
+                <a href="{{route('contatti')}}" class="btn btn-rounded btn-primary my-5 text-uppercase">Prenota visita</a>
                 </div>
             </div>
         </div>
     </header>
 
     <x-homesection>
-        <h2>I nostri servizi</h2>   
+        <h2 class="my-5">I nostri servizi</h2> 
+        <div class="row">
+        @foreach ($services as $service)
+            <x-card
+            image="{{$service['image']}}"
+            name="{{$service['name']}}"
+            />
+        @endforeach
+        </div>
         <a href="{{route('servizi')}}" class="btn btn-rounded btn-primary mt-3 mb-5 text-uppercase">Scopri i nostri servizi</a>
     </x-homesection>
 
     <x-homesection>
         <h2 class="mb-5">Il nostro team</h2>  
         <div class="row">
-            <div class="col-6 col-md-3 mb-4">
+            <!--<div class="col-6 col-md-3 mb-4">
                 <div class="card border-0 shadow">
                     <img src="/images/dentist1.jpg" class="card-img-top" alt="team member">
                     <div class="card-body text-center">
@@ -71,13 +79,18 @@
                     </div>
                     </div>
                 </div>
-            </div>  
+            </div> -->
+            @foreach ($team as $member)
+            <x-card
+            image="{{$member['image']}}"
+            name="{{$member['name']}}"
+            surname="{{$member['surname']}}"
+            title="{{$member['title']}}"
+            services="{{$member['services']}}"
+            />
+            @endforeach
         </div>
-        <a href="{{route('team')}}" class="btn btn-rounded btn-primary mt-3 mb-5 text-uppercase">Scopri il nostro team</a>
-    </x-homesection>
-
-    <x-homesection>
-        <h2>Dicono di noi</h2>   
+        <a href="{{route('team')}}" class="btn btn-rounded btn-primary mt-3 mb-md-5 text-uppercase">Scopri il nostro team</a>
     </x-homesection>
 
 </x-layout>

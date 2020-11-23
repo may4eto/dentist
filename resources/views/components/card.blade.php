@@ -1,14 +1,19 @@
-<div class="col-6 col-md-3 mb-4">
+<div class="col-12 col-md-6 col-lg-3 mb-4">
     <div class="card border-0 shadow">
-      <img src="{{$image}}" class="card-img-top" alt="team member">
+      <img src="{{$image}}" class="card-img-top" alt="">
       <div class="card-body text-center">
+        @if (isset($title, $name, $surname, $services))
         <h5 class="card-title mb-0">
           {{$title}} {{$name}} {{$surname}}
         </h5>
         <div class="card-text text-black-50">
           {{$services}}
         </div>
+        @elseif (isset($name))
+        <h5 class="card-title mb-0">
+          {{$name}}
+        </h5>
+        @endif
       </div>
-      <a class="btn btn-rounded btn-primary my-5 text-uppercase">Prenota visita</a>
     </div>
   </div>
