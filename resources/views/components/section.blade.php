@@ -10,6 +10,7 @@
             <p>
                 <span class="border border-primary text-primary rounded px-2 py-1 mr-3">{{$services}}</span>
             </p>
+            <a href="{{route('contatti', compact('name'))}}" class="btn text-white bg-primary mt-4">Prenota visita</a>
             @elseif (isset($name, $description, $dentists))
             <h2 class="mt-4 mt-md-0">{{$name}}</h2>
             <p>{{$description}}</p>
@@ -17,7 +18,6 @@
                 <span class="border border-primary text-primary rounded px-2 py-1 mr-3">{{$dentists}}</span>
             </p>
             @endif
-            <a href="{{route('contatti', compact('name'))}}" class="btn text-white bg-primary mt-4">Prenota visita</a>
         </div>
     </div>
 </div>
