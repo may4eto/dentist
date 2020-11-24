@@ -69,10 +69,9 @@
                         <label for="dentista" class="lead">Scegli specialista</label>
                         <select class="form-control" id="dentist" name="dentist" required>
                             <option></option>
-                            <option>Dott. Simone Sapienza</option>
-                            <option>Dott. Angelo Maggialetti</option>
-                            <option>Dott. Giovanni Paolillo</option>
-                            <option>Dr.ssa Beatrice Grimaldi</option>
+                            @foreach ($team as $member)
+                                <option {{$name == $member['name'] ? 'selected' : ''}}>{{$member['title']. ' ' . $member['name'] . ' '. $member['surname']}}</option>
+                            @endforeach
                         </select>
                     </div>
                     <div class="form-label-group mb-3">

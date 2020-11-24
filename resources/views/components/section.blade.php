@@ -17,7 +17,7 @@
                 <span class="border border-primary text-primary rounded px-2 py-1 mr-3">{{$dentists}}</span>
             </p>
             @endif
-            <a href="{{route('contatti')}}" class="btn text-white bg-primary mt-4">Prenota visita</a>
+            <a href="{{route('contatti', compact('name'))}}" class="btn text-white bg-primary mt-4">Prenota visita</a>
         </div>
     </div>
 </div>

@@ -23,18 +23,20 @@ use App\Http\Controllers\ServicesController;
 Route::get('/index', [FrontController::class, 'showIndex'])
 -> name('home');
 
-
 Route::get('/team', [TeamController::class, 'showTeam'])
 -> name('team');
 
 Route::get('/servizi', [ServicesController::class, 'showServices'])
 -> name('servizi');
 
-Route::get('/contatti', [ContactController::class, 'contactUs'])
+Route::get('/contatti/{name?}', [ContactController::class, 'contactUs'])
 -> name('contatti');
 
 Route::post('/contact_save', [ContactController::class, 'contactSave'])
 -> name('contact_save');
+
+Route::get('/grazie', [ContactController::class, 'thankYou'])
+-> name('grazie');
 
 
 /*Auth::routes();
