@@ -5,11 +5,11 @@
     <div class="container-fluid">
         <div class="row no-gutter">
             <div class="col-12 col-md-6 p-md-5">
-                <div class="my-3">
+                <div class="mt-5 mt-md-0 mb-5">
                     <h3 class="mb-3">Dove siamo</h3>
                     <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3005.802701291777!2d16.876017250675904!3d41.116999820575195!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1347e8436a184d51%3A0x46b0cca3a4825b96!2sVia%20Giovanni%20Amendola%2C%2017%2C%2070126%20Bari%20BA!5e0!3m2!1sen!2sit!4v1606134518526!5m2!1sen!2sit" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0" class="img-fluid"></iframe>
                 </div> 
-                <div class="my-3">
+                <div class="mb-5 mb-md-0">
                     <h3 class="mb-3">Orari di visita</h3>
                     <div class="table-responsive">
                         <table class="table table-striped">
