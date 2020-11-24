@@ -25,7 +25,7 @@
           <a class="nav-link {{Route::current()->getName() =='home' ? 'text-primary' : 'text-white'}}" href="{{route('contatti')}}">Contatti</a>
         </li>
         </ul>
-        <a href="{{route('contatti')}}" class="navbar-button btn {{Route::current()->getName() =='home' ? 'btn-outline-primary' : 'btn-outline-light'}} my-2 my-sm-0">Prenota visita</a>
+        <a href="{{route('contatti')}}" class="navbar-button btn {{Route::current()->getName() =='home' ? 'btn-outline-primary' : 'btn-outline-light'}} my-2 my-sm-0 d-none d-lg-block">Prenota visita</a>
     </div>
   </div>
 </nav>

@@ -3,7 +3,9 @@
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\TeamController;
 use App\Http\Controllers\FrontController;
+use App\Http\Controllers\ContactController;
 use App\Http\Controllers\ServicesController;
+
 
 
 
@@ -28,10 +30,12 @@ Route::get('/team', [TeamController::class, 'showTeam'])
 Route::get('/servizi', [ServicesController::class, 'showServices'])
 -> name('servizi');
 
-Route::get('/contatti', function () {
-    return view('contatti');
-})
+Route::get('/contatti', [ContactController::class, 'contactUs'])
 -> name('contatti');
+
+Route::post('/contact_save', [ContactController::class, 'contactSave'])
+-> name('contact_save');
+
 
 /*Auth::routes();
 

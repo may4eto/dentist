@@ -4,7 +4,7 @@
         <div class="container h-100">
             <div class="row h-100 align-items-center justify-content-md-end">
                 <div class="col-12 col-md-6 text-center text-md-left">
-                <h1 class="font-weight-light">Studio Dentistico <br> Dott. Simone Sapienza</h1>
+                <h1 class="font-weight-light mb-4">Studio Dentistico <br> Dott. Simone Sapienza</h1>
                 <h2 class="">Cura il tuo sorriso!</h2>
                 <a href="{{route('contatti')}}" class="btn btn-rounded btn-primary my-5 text-uppercase">Prenota visita</a>
                 </div>
