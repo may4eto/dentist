@@ -1,7 +1,7 @@
 document.addEventListener('scroll', () => {
 
     let navbarLinks = document.querySelectorAll('.nav-link')
-    let navbarToggler = document.querySelector('.navbar-toggler-icon')
+    let navbarToggler = document.querySelector('#toggler')
     let navbarButton = document.querySelector('.navbar-button')
     let navbarLogo =  document.querySelector('#logo')
 

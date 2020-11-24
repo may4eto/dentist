@@ -1,7 +1,7 @@
 <div class="container">
     <div class="row no-gutters my-5">
         <div class="col-12 col-md-6">
-            <img src={{$image}} alt="" class="img-fluid">
+            <img src={{$image}} alt="" class="img-fluid shadow">
         </div>
         <div class="col-12 col-md-6 pl-0 pl-md-4">
             @if (isset($name, $title, $surname, $services, $description))

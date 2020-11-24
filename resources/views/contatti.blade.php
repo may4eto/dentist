@@ -64,40 +64,37 @@
             <div class="col-12 col-md-6 p-md-5">
                 <h3 class="login-heading mb-4">Prenota la tua visita</h3>
                 <form>
-                <div class="form-label-roup mb-3">
-                    <label for="dentista">Scegli specialista</label>
-                    <select class="form-control" id="dentist">
-                        <option></option>
-                        <option>Dott. Simone Sapienza</option>
-                        <option>Dott. Angelo Maggialetti</option>
-                        <option>Dott. Giovanni Paolillo</option>
-                        <option>Dr.ssa Beatrice Grimaldi</option>
-                    </select>
-                </div>
-                <div class="form-label-group mb-3">
-                    <label for="data">Scegli data</label>
-                    <input type="date" class="form-control" id="date">
-                </div>
-                <div class="form-label-group mb-3">
-                    <label for="nome">Nome e cognome</label>
-                    <input type="text" id="date" class="form-control" placeholder="Nome e cognome" required autofocus>
-                </div>
-                <div class="form-label-group mb-3">
-                    <label for="inputEmail">Indirizzo email</label>
-                    <input type="email" id="inputEmail" class="form-control" placeholder="Indirizzo email" required autofocus>
-                </div>
-
-                <div class="form-label-group mb-3">
-                    <label for="messaggio">Inserisci il tuo messaggio</label>
-                    <textarea class="form-control" id="messagge" rows="3"></textarea>
-                </div>
-
-                <div class="custom-control custom-checkbox mb-3">
-                    <input type="checkbox" class="custom-control-input" id="customCheck1">
-                    <label class="custom-control-label" for="customCheck1">Accetto il trattamento dei dati secondo il regolamento GDPR</label>
-                </div>
-                <button class="btn btn-lg btn-primary btn-block btn-login text-uppercase font-weight-bold mb-5" type="submit">prenota visita</button>
-                <div class="text-center">
+                    <div class="form-label-roup mb-3">
+                        <label for="dentista">Scegli specialista</label>
+                        <select class="form-control" id="dentist">
+                            <option></option>
+                            <option>Dott. Simone Sapienza</option>
+                            <option>Dott. Angelo Maggialetti</option>
+                            <option>Dott. Giovanni Paolillo</option>
+                            <option>Dr.ssa Beatrice Grimaldi</option>
+                        </select>
+                    </div>
+                    <div class="form-label-group mb-3">
+                        <label for="data">Scegli data</label>
+                        <input type="date" class="form-control" id="date">
+                    </div>
+                    <div class="form-label-group mb-3">
+                        <label for="nome">Nome e cognome</label>
+                        <input type="text" id="date" class="form-control" placeholder="Nome e cognome" required autofocus>
+                    </div>
+                    <div class="form-label-group mb-3">
+                        <label for="inputEmail">Indirizzo email</label>
+                        <input type="email" id="inputEmail" class="form-control" placeholder="Indirizzo email" required autofocus>
+                    </div>
+                    <div class="form-label-group mb-3">
+                        <label for="messaggio">Inserisci il tuo messaggio</label>
+                        <textarea class="form-control" id="messagge" rows="3"></textarea>
+                    </div>
+                    <div class="custom-control custom-checkbox mb-3">
+                        <input type="checkbox" class="custom-control-input" id="customCheck1">
+                        <label class="custom-control-label" for="customCheck1">Accetto il trattamento dei dati secondo il regolamento GDPR</label>
+                    </div>
+                    <button class="btn btn-lg btn-primary btn-block btn-login text-uppercase font-weight-bold mb-5" type="submit">prenota visita</button>
                 </form>        
             </div>
         </div>

@@ -1,4 +1,8 @@
 
+  h1, h2, h3, h4 {
+    font-family: 'Lato', sans-serif;
+  }
+  
   .navbar-toggler {
     border: none !important;
     appearance: none !important;
@@ -21,5 +25,8 @@
     background-repeat: no-repeat;
   }
 
+  .table-striped tbody tr:nth-of-type(odd) {
+    background-color:rgba(52, 144, 220, 0.1) !important;
+  }
 
  
