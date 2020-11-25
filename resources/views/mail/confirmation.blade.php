@@ -12,8 +12,8 @@
     </style>
 </head>
 <body>
-    <p>Caro/Cara {{$contact['name']}},</p>
-    <p>Abbiamo ricevuto la Sua prenotazione. Sarà contattato/contattata al più presto.</p>
+    <p>Salve {{$contact['name']}},</p>
+    <p>Abbiamo ricevuto la Sua prenotazione. La contattiamo al più presto.</p>
     <ul>
         <li>Visita da: {{$contact['dentist']}}</li>
         <li>Data: {{$contact['date']}}</li>
